@@ -7,6 +7,30 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Instruções do projeto
+    -Fazer o clone do projeto ou usar a imagem que está no docker hub
+## Instruções para imagem docker
+    - Caso escolha o Docker este é o nome da imagem  eliakimramos/athenateste
+    -Na imagem docker não precisa de nenhuma configuração é só usar o comando “docker pull eliakimramos/athenateste” 
+    - após baixar execurar o comando docker run -p 8888:80 -p 9095:3306 -d eliakim/athenateste
+    - O -p 8888:80 é por onde você vai acessar o teste em seu navegador usando localhost:8888
+    -O -p 9095:3306 é para acessa o banco de dados com algum cliente db. Os dados para acesso ao banco pegar no arquivo .env do projeto.
+
+## Instruções para clonagem desse repositório 
+	-clonar o repositório em um local que rode PHP ^7.3|^8.0
+	-copiar o .env.exemple e fazer um novo arquivo .env
+	-Criar o banco de dados
+	-No arquivo .env colocar os dados do banco de dados que você vai usar
+	-No terminal dentro da pasta do projeto rodar o comando : composer install
+	-No terminal dentro da pasta do projeto rodar o comando : npm install
+	-No terminal dentro da pasta do projeto rodar o comando : php artisan migrate --seed
+	-No terminal dentro da pasta do projeto rodar o comando : npm run dev
+
+## Para acessar o sistema
+	- Na tela de login usar o email:jorge@terra.com.br senha:@athena01
+	- qualquer outro emai que esteja no sistema tem a senha no padrão @athena01 a @athena14
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
